@@ -1,4 +1,4 @@
-.Button1{
+Button1{
     background-color: blue; /* Green */
     border: none;
     color: black;
@@ -8,27 +8,42 @@
     display: inline-block;
     font-size: 12px;
 }
-.topnav {
+.Menu {
     background-color: #23272A;
     overflow: hidden;
+    border: lightblue;
+    bottom: 20px;
+
+}
+.Text{
+    text-align: center;
+    color: #FFFFFF;
+    border: #FFFFFF;
+    border-radius: 15px;
+    font-size: 23px;
+}
+.Name{
+    text-align:center;
+    font-size: 120px;
+    color: #7289DA;
 }
 
-
-.topnav a {
+.Menu a {
     float: left;
-    color: #f2f2f2;
+    color: #99AAB5;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    border-radius: 29px 29px 29px;
 }
 
-.topnav a:hover {
+.Menu a:hover {
     background-color: #7289DA;
     color: black;
 }
 
-.topnav a.active {
+.Menu a.active {
     background-color: #7289DA;
-    color: white;
+    color: #99AAB5;
 }
