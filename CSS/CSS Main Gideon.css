@@ -8,7 +8,11 @@
     border: lightblue;
     bottom: 20px;
 
+
+
 }
+
+
 .Buttons{
     border: lightblue;
     background-color: #7289DA;
@@ -17,8 +21,14 @@
     cursor: pointer;
     border-radius: 15px 15px 15px;
     margin: 0 auto;
-    display: inline-block; justify-content: center; 
+    display: inline-block; justify-content: center;
 }
+.Bottom{
+    position: static;
+    bottom: 0;
+    color: #7289DA;
+}
+
 .Text{
     text-align: center;
     color: #FFFFFF;
@@ -40,14 +50,34 @@
     text-decoration: none;
     font-size: 17px;
     border-radius: 29px 29px 29px;
+
+
+
 }
 
 .Menu a:hover {
     background-color: #7289DA;
     color: black;
 }
-
+.Image{
+    width: 19%;
+    height: auto;
+    text-align: end;
+}
 .Menu a.active {
     background-color: #7289DA;
     color: #99AAB5;
+}
+.CommandName{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 44px;
+}
+.CommandList{
+    font-size:22px;
+    color: #99AAB5;
+   padding: 15px;
+    margin: 15px;
+    border: 15px aquamarine;
+
 }
