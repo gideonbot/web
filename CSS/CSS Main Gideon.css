@@ -21,7 +21,20 @@
     cursor: pointer;
     border-radius: 15px 15px 15px;
     margin: 0 auto;
-    display: inline-block; justify-content: center;
+    display: flex; justify-content: center;
+
+
+
+}
+.Buttons2{
+    border: lightblue;
+    background-color: #7289DA;
+
+    padding: 11px;
+    cursor: grab;
+    border-radius: 15px 15px 15px;
+    margin: 0 auto;
+    display: flex; justify-content: center;
 }
 .Bottom{
     position: static;
@@ -76,7 +89,7 @@
 .CommandList{
     font-size:22px;
     color: #99AAB5;
-   padding: 15px;
+    padding: 15px;
     margin: 15px;
     border: 15px aquamarine;
 
