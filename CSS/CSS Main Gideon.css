@@ -12,13 +12,12 @@
 .Buttons{
     border: lightblue;
     background-color: #7289DA;
-     text-align: center;
+    text-align: center;
     padding: 11px;
     cursor: pointer;
     border-radius: 15px 15px 15px;
     margin: 0 auto;
-    display: flex; justify-content: center;
-
+    display: inline-block; justify-content: center; 
 }
 .Text{
     text-align: center;
