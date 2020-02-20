@@ -21,6 +21,14 @@
 }
 .Buttons{
     display: inline-block;
+    border: lightblue;
+    background-color: #7289DA;
+    text-align: center;
+    padding: 11px;
+    cursor: pointer;
+    border-radius: 15px 15px 15px;
+    margin: 0 auto;
+    
 }
 .Bottom{
     position: static;
