@@ -28,6 +28,7 @@
     cursor: pointer;
     border-radius: 15px 15px 15px;
     margin: 0 auto;
+    text-decoration: none;
 
 }
 .Bottom{
@@ -45,7 +46,7 @@
 }
 .Name{
     text-align:center;
-    font-size: 120px;
+    font-size: 100px;
     color: #7289DA;
 }
 
