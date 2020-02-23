@@ -16,7 +16,7 @@ body {
  }
 
 .navbar {
-    box-shadow: none !important
+    box-shadow: none !important;
 }
 
 .navbar-brand {
@@ -27,14 +27,74 @@ body {
     color: #fff !important
 }
 
-.img {
+#gideon {
     margin-left: auto;
     margin-right: auto;
     width: 270px;
     height: 270px;
     position: relative;
-    left: -235px;
-    top: 250px;
+    left: -130px;
+    top: 10px;
+}
+
+#flash {
+    margin-left: auto;
+    margin-right: auto;
+    width: 135px;
+    height: 135px;
+    position: relative;
+    left: -135px;
+    top: 10px;
+}
+
+#arrow {
+    margin-left: auto;
+    margin-right: auto;
+    width: 135px;
+    height: 135px;
+    position: relative;
+    left: -35px;
+    top: 10px;
+}
+
+#lot {
+    margin-left: auto;
+    margin-right: auto;
+    width: 135px;
+    height: 135px;
+    position: relative;
+    left: -0px;
+    top: 10px;
+}
+
+#sg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 135px;
+    height: 135px;
+    position: relative;
+    left: -335px;
+    top: 10px;
+}
+
+#bw {
+    margin-left: auto;
+    margin-right: auto;
+    width: 135px;
+    height: 135px;
+    position: relative;
+    left: -435px;
+    top: 10px;
+}
+
+#cs {
+    margin-left: auto;
+    margin-right: auto;
+    width: 135px;
+    height: 135px;
+    position: relative;
+    left: -535px;
+    top: 50px;
 }
 
 #credits {
