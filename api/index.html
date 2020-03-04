@@ -43,7 +43,7 @@
             </li>
         </ul>
         <a target="_blank" href="https://github.com/gideonbot"> <button class="btn btn-outline-secondary my-2 my-sm-0 btn-round btn-sm" href="https://github.com/gideonbot" target="_blank">GitHub</button></a>
-        <a target="_blank" href="https://github.com/gideonbot"><button class="btn btn-outline-secondary my-2 my-sm-0 btn-round btn-sm" href="https://github.com/gideonbot" target="_blank">Login</button></a>
+        <a href="http://localhost:80/login"><button class="btn btn-outline-secondary my-2 my-sm-0 btn-round btn-sm" href="http://localhost:80/login">Login</button></a>
     </div>
 </nav>
 <h1 id="credits" class="subtitle">API Key:</h1>
@@ -52,8 +52,15 @@
 <a id="apibutton"> <button class="btn btn-secondary btn-lg" onclick="API()">Generate API Key</button></a>
 <script>
     function API() {
-      let cookie = document.cookie.match(/^(.*;)?\s*user\s*=\s*[^;]+(.*)?$/);
+      let cookie = document.cookie.match(/^(.*;)?\s*login\s*=\s*[^;]+(.*)?$/);
       if (!cookie) return alert("You need to login before we can generate an API key for you!");
+      else {
+        function getCookieValue(a) {
+        var b = document.cookie.match('(^|[^;]+)\\s*' + a + '\\s*=\\s*([^;]+)');
+        return b ? b.pop() : '';
+        }
+        return alert(getCookieValue('login'));
+      }
     }
 </script>
 <div class="footer">
