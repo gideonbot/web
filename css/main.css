@@ -62,7 +62,7 @@ details[open] summary {
     margin-right: auto;
     position: relative;
     left: 20px;
-    top: -150px;
+    top: 0px;
 }
 
 #gnrcard{
@@ -71,6 +71,7 @@ details[open] summary {
     position: relative;
     bottom: -150px;
     height: 150px;
+    top: 0px;
 }
 
 #funcard{
