@@ -314,3 +314,9 @@ details[open] summary {
     text-decoration: none !important;
     font-weight: bold !important;
 }
+.CommandTable{
+    color: #34ce57;
+    text-transform: full-width;
+    border: 1px #7289DA;
+
+}
