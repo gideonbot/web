@@ -327,3 +327,8 @@ details[open] summary {
     border: 1px #7289DA;
 
 }
+@media only screen and (max-width: 600px){
+body{
+    font-size: 9px;
+}
+}
