@@ -118,6 +118,7 @@ details[open] summary {
 }
 
 #gideon {
+    object-fit: cover;
     margin-left: auto;
     margin-right: auto;
     width: 270px;
@@ -128,6 +129,7 @@ details[open] summary {
 }
 
 #flash {
+    object-fit: cover;
     margin-left: auto;
     margin-right: auto;
     width: 135px;
@@ -138,6 +140,7 @@ details[open] summary {
 }
 
 #arrow {
+    object-fit: cover;
     margin-left: auto;
     margin-right: auto;
     width: 135px;
@@ -148,6 +151,7 @@ details[open] summary {
 }
 
 #lot {
+    object-fit: cover;
     margin-left: auto;
     margin-right: auto;
     width: 135px;
@@ -158,6 +162,7 @@ details[open] summary {
 }
 
 #sg {
+    object-fit: cover;
     margin-left: auto;
     margin-right: auto;
     width: 135px;
@@ -168,6 +173,7 @@ details[open] summary {
 }
 
 #bw {
+    object-fit: cover;
     margin-left: auto;
     margin-right: auto;
     width: 135px;
@@ -178,6 +184,7 @@ details[open] summary {
 }
 
 #cs {
+    object-fit: cover;
     margin-left: auto;
     margin-right: auto;
     width: 135px;
