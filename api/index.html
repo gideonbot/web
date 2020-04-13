@@ -46,23 +46,6 @@
         <a target="_blank" href="https://top.gg/bot/595328879397437463/vote"><button class="btn btn-outline-secondary my-2 my-sm-0 btn-round btn-sm" href="https://top.gg/bot/595328879397437463/vote" target="_blank">Vote</button></a>
     </div>
 </nav>
-<h1 id="credits" class="subtitle">API Key:</h1>
-<textarea id="apifield" rows="1" cols="25" readonly>
-</textarea>
-<a id="apibutton"> <button class="btn btn-secondary btn-lg" onclick="API()">Generate API Key</button></a>
-<script>
-    function API() {
-      let cookie = document.cookie.match(/^(.*;)?\s*login\s*=\s*[^;]+(.*)?$/);
-      if (!cookie) return alert("You need to login before we can generate an API key for you!");
-      else {
-        function getCookieValue(a) {
-        var b = document.cookie.match('(^|[^;]+)\\s*' + a + '\\s*=\\s*([^;]+)');
-        return b ? b.pop() : '';
-        }
-        return alert(getCookieValue('login'));
-      }
-    }
-</script>
 <div class="footer">
     <i>Website made with love by TheAcornHunter, MBR and adrifcastr. Copyright GideonBot</i>
 </div>
