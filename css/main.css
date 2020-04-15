@@ -101,20 +101,25 @@ details[open] summary {
     height: 150px;
 }
 
-#apifield {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    left: 95px;
-    top: -64px;
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+  
+.closebtn {
+margin-left: 15px;
+color: white;
+font-weight: bold;
+float: right;
+font-size: 22px;
+line-height: 20px;
+cursor: pointer;
+transition: 0.3s;
 }
 
-#apibutton {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    left: -210px;
-    top: -20px;
+.closebtn:hover {
+color: black;
 }
 
 #gideon {
