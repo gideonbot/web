@@ -347,4 +347,26 @@ color: black;
     h1{
         font-size: 9px;
     }
+    #gideon {
+        width: 25%;
+    }
+    #flash {
+        width: 25%;
+    }
+    #arrow {
+        width: 25%;
+    }
+    #lot {
+        width: 25%;
+    }
+    #sg {
+        width: 25%;
+    }
+    
+    #bw {
+        width: 25%;
+    }
+    #cs {
+        width: 25%;
+    }
 }
