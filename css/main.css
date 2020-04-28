@@ -123,87 +123,97 @@ transition: 0.3s;
 color: black;
 }
 
+#images {
+    object-fit: scale-down;
+    position: relative;
+    vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+
 #gideon {
-    object-fit: cover;
+    object-fit: scale-down;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     max-width: 270px;
     height: auto;
     position: relative;
-    left: 35em;
+    left: 40em;
     top: 0px;
 }
 
 #flash {
-    object-fit: cover;
+    object-fit: scale-down;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     max-width: 135px;
     height: auto;
     position: relative;
-    left: 650px;
+    left: 47em;
     top: 10px;
 }
 
 #arrow {
-    object-fit: cover;
+    object-fit: scale-down;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     max-width: 135px;
     height: auto;
     position: relative;
-    left: 680px;
+    left: 48em;
     top: 10px;
 }
 
 #lot {
-    object-fit: cover;
+    object-fit: scale-down;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     max-width: 135px;
     height: auto;
     position: relative;
-    left: -690px;
+    left: -47em;
     top: 10px;
 }
 
 #sg {
-    object-fit: cover;
+    object-fit: scale-down;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     max-width: 135px;
     height: auto;
     position: relative;
-    left: 690px;
+    left: 49.5em;
     top: 10px;
 }
 
 #bw {
-    object-fit: cover;
+    object-fit: scale-down;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     max-width: 135px;
     height: auto;
     position: relative;
-    left: -680px;
+    left: -45.5em;
     top: 10px;
 }
 
 #cs {
-    object-fit: cover;
+    object-fit: scale-down;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     max-width: 135px;
     height: auto;
     position: relative;
-    left: -650px;
+    left: -44em;
     top: 10px;
 }
 
