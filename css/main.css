@@ -357,6 +357,9 @@ color: black;
     h1{
         font-size: 9px;
     }
+    .display-5 title{
+        font-size: 12px;
+    }
     #gideon {
         width: 25%;
     }
