@@ -36,6 +36,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .images > img {
@@ -186,4 +187,21 @@ footer {
     .images > #gideon {
         width: 35%;
     }
+
+    #aboutinfo {
+        padding-top: 35%;
+    }
+
+    html {
+        padding-top: 20%;
+    }
+}
+
+#aboutinfo {
+    color: white;
+    margin-top: -150px;
+}
+
+a {
+    color: red;
 }
