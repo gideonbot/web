@@ -1,0 +1,189 @@
+* { font-family: Poppins; }
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #23272a;
+    justify-content: center;
+    height: 100vh;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.right > a {
+    padding: 4px 15px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.right > a:hover {
+    background-color: rgba(87, 87, 87, 0.699);
+}
+
+nav {
+    margin: 20px 10px 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.images > img {
+    width: 10%;
+    transition: box-shadow 0.5s;
+}
+
+/*.images > img:hover {
+    box-shadow: 5px 5px 5px gray;
+}*/
+
+.images > #gideon { width: 15%; }
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+}
+
+.left > a {
+    color: white;
+    transition: background-color 0.2s;
+    padding: 10px 5px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.left > a:hover {
+    background-color: gray;
+}
+
+.big {
+    color: white;
+    text-align: center;
+    /*margin: 50px 0;*/
+}
+
+.big > h1 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+}
+
+.big > p {
+    margin: 0 auto;
+    color: gray;
+    width: 80%;
+    font-size: 16px;
+}
+
+#join, #add {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    width: 176px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.links {
+    margin-top: 30px;
+}
+
+#join { background-color: #7289da; }
+#add { background-color: #2c2f33; }
+
+#join:hover { background-color: rgb(95, 119, 207); }
+#add:hover { background-color: rgb(43, 43, 43); }
+
+main {
+    background-image: url("https://auxetite-cdn.sirv.com/wavy-blurple-by-nouridio.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    /*padding-bottom: 200px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*padding-top: 40px;*/
+    flex: 1;
+}
+
+footer {
+    background-color: #353e4c;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .left {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .right {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .right > a {
+        margin-top: 5px;
+        padding: 3px 15px;
+    }
+
+    .left > a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        background-image: none;
+    }
+
+    footer {
+        font-size: small;
+    }
+    
+    .big > h1 {
+        font-size: 25px;
+    }
+
+    .big > p {
+        font-size: 13px;
+    }
+
+    .outer { display: none; }
+
+    .images > img {
+        width: 25%;
+    }
+
+    .images > #gideon {
+        width: 35%;
+    }
+}
