@@ -24,6 +24,14 @@ main {
 
 @media (max-width: 768px) {
     p { font-size: smaller; }
+    .card {
+        max-width: 50%;
+        margin-bottom: 10px;
+    }
+    main {
+        flex-direction: column;
+        margin-top: 10px;
+    }
 
-    .card { max-width: 40%; }
+    body { height: unset; }
 }
