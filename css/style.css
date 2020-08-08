@@ -129,6 +129,8 @@ main {
     flex: 1;
 }
 
+main > h2 { color: white; }
+
 footer {
     background-color: #353e4c;
     color: white;
@@ -166,37 +168,17 @@ a {
     color: black;
 }
 
-/* Float four columns side by side */
-.column {
-    display: inline-block;
-    width: 20%;
-    padding: 0 10px;
-    padding-top: 120px;
-  }
-  
-/* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Style the counter cards */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    background-color: #7289DA;
-    color: #FFFFFF;
-    text-shadow: 1px 1px black;
-    height: 200px;
-    margin-top: -100px;
-}
+.show { display: block; }
+.hide { display: none; }
   
 @media (max-width: 768px) {
+    .hide {
+        display: block;
+        width: 100%;
+    }
+
+    .show { display: none; }
+
     nav {
         flex-direction: column;
         margin: 0;
@@ -218,49 +200,12 @@ a {
         padding: 3px 15px;
     }
 
-    .left > a {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-
-    main {
-        background-image: none;
-    }
-
-    footer {
-        font-size: small;
-    }
-    
-    .big > h1 {
-        font-size: 25px;
-    }
-
-    .big > p {
-        font-size: 13px;
-    }
-
+    main { background-image: none; }
+    footer { font-size: small; }
+    .big > h1 { font-size: 25px; }
+    .big > p { font-size: 13px; }
     .outer { display: none; }
-
-    .images > img {
-        width: 25%;
-    }
-
-    .images > #gideon {
-        width: 35%;
-    }
-
-    #aboutinfo {
-        padding-top: 35%;
-    }
-
-    html {
-        padding-top: 20%;
-    }
-
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 10px;
-    }
+    .images > img { width: 25%; }
+    .images > #gideon { width: 35%; }
+    #aboutinfo { padding-top: 35%; }
 }

@@ -11,7 +11,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/webp" href="https://github.com/gideonbot/web/raw/master/img/icons/gideon.webp">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/features.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap" rel="stylesheet">
+        <script src="js/menu.js"></script>
+        <script src="https://kit.fontawesome.com/3a4a7fa835.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="alert">
@@ -20,10 +23,11 @@
         </div>
         <nav>
             <div class="left">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="features.html">FEATURES</a>
-                <a href="doc.html">DOCUMENTATION</a>
+                <a id="menu" class="hide"><i class="fas fa-bars"></i>  MENU</a>
+                <a href="index.html" class="show">HOME</a>
+                <a href="about.html" class="show">ABOUT</a>
+                <a href="features.html" class="show">FEATURES</a>
+                <a href="doc.html" class="show">DOCUMENTATION</a>
             </div>
 
             <div class="right">
@@ -33,47 +37,37 @@
             </div>
         </nav>
     <main>
-        <div class="row">
-            <div class="column">
-              <div class="card"><h4><b>Information</b></h4>
-                <p>Check the next upcoming Arrowverse episodes, access wiki data, get detailed episode infos and find out which ep is the next to watch in correct order!</p>
-              </div>
-            </div>
-            <div class="column">
-              <div class="card"><h4><b>Games</b></h4>
-                <p>Explore a wide variety of interactive and competetive Arrowverse minigames for you and your friends to enjoy! You might encounter a few easter-eggs aswell!</p>
-              </div>
-            </div>
-            <div class="column">
-                <div class="card"><h4><b>Utilities</b></h4>
-                  <p>Looking for bot/server statistics, user and contact infos or GIFS and invite links? We got you covered with a bright palette of miscellaneous commands!</p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card"><h4><b>Crossover Mode</b></h4>
-                  <p>It's crossover time and you're worried about spoilers? Worry no more! Use <code>!cvm</code> to enable the Crossover Mode and embed all new messages in Discord spoiler tags!</p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card"><h4><b>Translation Mode</b></h4>
-                  <p>¿Ustedes no hablan ingles? Different languages are not an issue with Gideon! Use <code>!trmode</code> to enable automatic translation for all your messages!</p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card"><h4><b>Spoilers Blocker</b></h4>
-                  <p>The integrated <code>ABM</code> service automatically blocks malicious content from <code>Pagey, TheDCTVShow, WGTC</code> and other sources which intoxicate the community!</p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card"><h4><b>Custom API</b></h4>
-                  <p>Gideon accesses a variety of API's to retrieve data, including our own custom Gideon API! You can read more about Gideon's API on its documentation page!</p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="card"><h4><b>Voice Control</b></h4>
-                  <p>Tired of typing and reading? Join a voice channel and start talking and listening instead! Gideon Voice™ provides speech recognition and audio responses!</p>
-                </div>
-            </div>
+        <div class="card">
+            <h4>Information</h4>
+            <p>Check the next upcoming Arrowverse episodes, access wiki data, get detailed episode infos and find out which ep is the next to watch in correct order!</p>
+        </div>
+        <div class="card">
+            <h4>Games</h4>
+            <p>Explore a wide variety of interactive and competetive Arrowverse minigames for you and your friends to enjoy! You might encounter a few easter-eggs aswell!</p>
+        </div>
+        <div class="card">
+            <h4>Utilities</h4>
+            <p>Looking for bot/server statistics, user and contact infos or GIFS and invite links? We got you covered with a bright palette of miscellaneous commands!</p>
+        </div>
+        <div class="card">
+            <h4>Crossover Mode</h4>
+            <p>It's crossover time and you're worried about spoilers? Worry no more! Use <code>!cvm</code> to enable the Crossover Mode and embed all new messages in Discord spoiler tags!</p>
+        </div>
+        <div class="card">
+            <h4>Translation Mode</h4>
+            <p>¿Ustedes no hablan ingles? Different languages are not an issue with Gideon! Use <code>!trmode</code> to enable automatic translation for all your messages!</p>
+        </div>
+        <div class="card">
+            <h4>Spoilers Blocker</h4>
+            <p>The integrated <code>ABM</code> service automatically blocks malicious content from <code>Pagey, TheDCTVShow, WGTC</code> and other sources which intoxicate the community!</p>
+        </div>
+        <div class="card">
+            <h4>Custom API</h4>
+            <p>Gideon accesses a variety of API's to retrieve data, including our own custom Gideon API! You can read more about Gideon's API on its documentation page!</p>
+        </div>
+        <div class="card">
+            <h4>Voice Control</h4>
+            <p>Tired of typing and reading? Join a voice channel and start talking and listening instead! Gideon Voice™ provides speech recognition and audio responses!</p>
         </div>
     </main>
 <footer>
