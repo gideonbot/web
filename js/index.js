@@ -1,8 +1,8 @@
-window.onload = () => {
+document.addEventListener('DOMContentLoaded', () => {
     setInterval(() => {
         if (window.screen.width < 768) {
             let elements = document.getElementsByTagName("img");
-
+    
             let left = [elements[0], elements[1], elements[2]];
             let right = [elements[4], elements[5], elements[6]];
     
@@ -21,4 +21,12 @@ window.onload = () => {
             random2.classList.remove("outer");
         }
     }, 5000);
-};
+    
+    fetch("/api/discord/stats").then(response => {
+        response.json().then(json => {
+            let el = document.getElementById("h1");
+            let msg = "Processed " + json.commands + " commands in " + json.guilds + " guilds with over " + json.users + " users";
+            el.innerText = el.innerText.replace("Processed -- commands in -- guilds with over -- users", msg);
+        }, failed => console.log(failed));
+    }, failed => console.log(failed));
+}, false);
