@@ -12,18 +12,22 @@
         <link rel="icon" type="image/webp" href="https://github.com/gideonbot/web/raw/master/img/icons/gideon.webp">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap" rel="stylesheet">
+        <script src="js/nomax.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="https://kit.fontawesome.com/3a4a7fa835.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body class="maxheight">
         <div class="alert">
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
             <strong>Attention!</strong> The website is still under construction. Please use <strong>!help</strong> to get a list of all commands!
         </div>
         <nav>
             <div class="left">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="features.html">FEATURES</a>
-                <a href="doc.html">DOCUMENTATION</a>
+                <a id="menu" class="hide"><i class="fas fa-bars"></i>  MENU</a>
+                <a href="index.html" class="show">HOME</a>
+                <a href="about.html" class="show">ABOUT</a>
+                <a href="features.html" class="show">FEATURES</a>
+                <a href="doc.html" class="show">DOCUMENTATION</a>
             </div>
 
             <div class="right">
@@ -33,6 +37,7 @@
             </div>
         </nav>
         <main>
+            <h2>This page is WIP</h2>
         </main>
         <footer>
             <i>All Content is © of gideonbot.com 2020. The Arrowverse franchise and all related characters and elements are © & ™ of DC Comics and Warner Bros. Entertainment Inc.</i>
