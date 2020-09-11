@@ -2,13 +2,19 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById("menu").onclick = () => {
         let elements = document.querySelectorAll(".show");
         if (elements.length > 0) {
-            elements.forEach(x => x.className = "hide");
+            elements.forEach(x => {
+                x.classList.add("hide");
+                x.classList.remove("show");
+            });
             return;
         }
     
         elements = document.querySelectorAll(".hide");
         elements.forEach(x => {
-            if (x.id != "menu") x.className = "show";
+            if (x.id != "menu") {
+                x.classList.add("show");
+                x.classList.remove("hide");
+            }
         });
     };
 
@@ -17,6 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
         let element = document.querySelectorAll(".alert")[0];
         element.classList.remove("hidden");
     }
+
+    fetch("https://status.gideonbot.com/api/v2/status.json").then(response => {
+        response.json().then(json => {
+            if (json.status.description != "All Systems Operational") {
+                AddStatusPageScript();
+            }
+        }, failed => console.log(failed));
+    }, failed => console.log(failed));
 }, false);
 
 function RemoveAlert(automatic = false) {
@@ -24,4 +38,11 @@ function RemoveAlert(automatic = false) {
     element.classList.add("hidden");
 
     if (!automatic) localStorage.setItem("last_alert_time", Date.now());
+}
+
+function AddStatusPageScript() {
+    let script = document.createElement("script");
+    script.src = "https://zbt1drg946v5.statuspage.io/embed/script.js";
+
+    document.head.appendChild(script);
 }

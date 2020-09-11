@@ -13,10 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 item.style.height = max + "px";
             }
         };
-        window.onresize();
+
+        setTimeout(() => window.onresize(), 125);
     }
 
-    setTimeout(() => {
-        window.scrollTo(0, 0);
-    }, 1e3);
+    setTimeout(() => window.scrollTo(0, 0), 1e3);
 }, false);

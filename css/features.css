@@ -22,6 +22,8 @@ main {
     margin-bottom: 10px;
 }
 
+main { align-content: space-evenly; }
+
 @media (max-width: 768px) {
     p { font-size: smaller; }
     .card {
