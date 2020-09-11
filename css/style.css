@@ -149,8 +149,6 @@ a { color: red; }
 
 .show { display: block; }
 .hide { display: none; }
-
-.card > p { font-size: large; }
   
 @media (max-width: 768px) {
     .hide {
