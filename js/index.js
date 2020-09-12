@@ -4,9 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     fetch("/api/discord/stats").then(response => {
         response.json().then(json => {
-            let el = document.getElementById("stats");
-            let msg = "Processed " + json.commands.toLocaleString() + " commands in " + json.guilds.toLocaleString() + " guilds with over " + json.users.toLocaleString() + " users";
-            el.innerText = msg;
+            document.getElementById("stats").innerText = "Processed " + json.commands.toLocaleString() + " commands in " + json.guilds.toLocaleString() + " guilds with over " + json.users.toLocaleString() + " users";
         }, failed => console.log(failed));
     }, failed => console.log(failed));
 }, false);
