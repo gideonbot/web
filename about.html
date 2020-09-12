@@ -7,23 +7,28 @@
         <meta name="og:site_name" content="Gideon - gideonbot.com"/>
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http:/gideonbot.com/" />
-        <meta property="og:image" content="https://github.com/gideonbot/web/raw/master/img/icons/gideon.webp" />
+        <meta property="og:image" content="https://gideonbot.com/img/logos/gideon.webp" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/webp" href="https://github.com/gideonbot/web/raw/master/img/icons/gideon.webp">
+        
+        <link rel="icon" type="image/png" href="img/icons/gideon-icon.png">
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/fontawesome.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap">
+        
+        <script src="js/menu.js"></script>
     </head>
     <body>
-        <div class="alert">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="alert hidden">
+            <span class="closebtn" onclick="RemoveAlert()">&times;</span>
             <strong>Attention!</strong> The website is still under construction. Please use <strong>!help</strong> to get a list of all commands!
         </div>
         <nav>
             <div class="left">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="features.html">FEATURES</a>
-                <a href="doc.html">DOCUMENTATION</a>
+                <a id="menu" class="hide"><i class="fas fa-bars"></i>  MENU</a>
+                <a href="index.html" class="show">HOME</a>
+                <a href="about.html" class="show selected">ABOUT</a>
+                <a href="features.html" class="show">FEATURES</a>
+                <a href="doc.html" class="show">DOCUMENTATION</a>
             </div>
 
             <div class="right">
@@ -32,23 +37,22 @@
                 <a href="https://top.gg/bot/595328879397437463/vote">VOTE</a>
             </div>
         </nav>
-    <main>
-        <div id="aboutinfo">
-            Credits:<br><br>Gideon is currently being owned and maintained by adrifcastr.<br>Gideon is being developed by adrifcastr and MBR.<br>In no particular order, I credit the following for their invaluable contributions:<br><br>
-            <li><span><b>MBR</b> for development, testing & support.</span></li>
-            <li><span><b>Klaus#5857</b> for website development & server hosting.</span></li>
-            <li><span><b>Stevenson Johnson</b> for drawing the artwork.</span></li>
-            <li><span><b>AceFire6</b> for <a href="https://arrowverse.info">arrowverse.info</a> and its <a href="https://arrowverse.info/api">API</a>.</span></li>
-            <li><span><b>7coil</b> for <a href="https://github.com/adrifcastr/Gideon/pull/24">#24</a> and <a href="https://github.com/adrifcastr/Gideon/pull/25">#25</a>.</span></li><br>
-            Contact:<br><br>
-            <li><span><b>Email:</b> <a href="mailto:admin@gideonbot.com">admin@gideonbot.com</a></span></li>
-            <li><span><b>Discord:</b> adrifcastr#0001</span></li>
-            <li><span><b>Server:</b> <a href="https://discord.gg/h9SEQaU">Time Vault</a></span></li>
-        </div>
-    </main>
-<footer>
-    <i>All Content is © of gideonbot.com 2020. The Arrowverse franchise and all related characters and elements are © & ™ of DC Comics and Warner Bros. Entertainment Inc.</i>
-</footer>
-<script src="https://zbt1drg946v5.statuspage.io/embed/script.js"></script>
-</body>
+        <main>
+            <div id="aboutinfo">
+                Credits:<br><br>Gideon is currently being owned and maintained by adrifcastr.<br>Gideon is being developed by adrifcastr and MBR.<br>In no particular order, I credit the following for their invaluable contributions:<br><br>
+                <li><span><b>MBR</b> for development, testing & support.</span></li>
+                <li><span><b>Klaus#5857</b> for website development & server hosting.</span></li>
+                <li><span><b>Stevenson Johnson</b> for drawing the artwork.</span></li>
+                <li><span><b>AceFire6</b> for <a href="https://arrowverse.info">arrowverse.info</a> and its <a href="https://arrowverse.info/api">API</a>.</span></li>
+                <li><span><b>7coil</b> for <a href="https://github.com/adrifcastr/Gideon/pull/24">#24</a> and <a href="https://github.com/adrifcastr/Gideon/pull/25">#25</a>.</span></li><br>
+                Contact:<br>
+                <li><span><b>Email:</b> <a href="mailto:admin@gideonbot.com">admin@gideonbot.com</a></span></li>
+                <li><span><b>Discord:</b> adrifcastr#0001</span></li>
+                <li><span><b>Server:</b> <a href="https://discord.gg/h9SEQaU">Time Vault</a></span></li>
+            </div>
+        </main>
+        <footer>
+            <i>All Content is © of gideonbot.com 2020. The Arrowverse franchise and all related characters and elements are © & ™ of DC Comics and Warner Bros. Entertainment Inc.</i>
+        </footer>
+    </body>
 </html>

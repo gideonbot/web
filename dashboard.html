@@ -7,36 +7,41 @@
         <meta name="og:site_name" content="Gideon - gideonbot.com"/>
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http:/gideonbot.com/" />
-        <meta property="og:image" content="https://github.com/gideonbot/web/raw/master/img/icons/gideon.webp" />
+        <meta property="og:image" content="https://gideonbot.com/img/logos/gideon.webp" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/webp" href="https://github.com/gideonbot/web/raw/master/img/icons/gideon.webp">
+        
+        <link rel="icon" type="image/png" href="img/icons/gideon-icon.png">
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/fontawesome.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap">
+        
+        <script src="js/menu.js"></script>
     </head>
     <body>
-        <div class="alert">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="alert hidden">
+            <span class="closebtn" onclick="RemoveAlert()">&times;</span>
             <strong>Attention!</strong> The website is still under construction. Please use <strong>!help</strong> to get a list of all commands!
         </div>
         <nav>
             <div class="left">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="features.html">FEATURES</a>
-                <a href="doc.html">DOCUMENTATION</a>
+                <a id="menu" class="hide"><i class="fas fa-bars"></i>  MENU</a>
+                <a href="index.html" class="show">HOME</a>
+                <a href="about.html" class="show">ABOUT</a>
+                <a href="features.html" class="show">FEATURES</a>
+                <a href="doc.html" class="show">DOCUMENTATION</a>
             </div>
 
             <div class="right">
-                <a href="dashboard.html">DASHBOARD</a>
+                <a href="dashboard.html" class="selected">DASHBOARD</a>
                 <a href="https://github.com/gideonbot">GITHUB</a>
                 <a href="https://top.gg/bot/595328879397437463/vote">VOTE</a>
             </div>
         </nav>
-    <main>
-    </main>
-<footer>
-    <i>All Content is © of gideonbot.com 2020. The Arrowverse franchise and all related characters and elements are © & ™ of DC Comics and Warner Bros. Entertainment Inc.</i>
-</footer>
-<script src="https://zbt1drg946v5.statuspage.io/embed/script.js"></script>
-</body>
+        <main>
+            <h2>This page is WIP</h2>
+        </main>
+        <footer>
+            <i>All Content is © of gideonbot.com 2020. The Arrowverse franchise and all related characters and elements are © & ™ of DC Comics and Warner Bros. Entertainment Inc.</i>
+        </footer>
+    </body>
 </html>

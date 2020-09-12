@@ -7,24 +7,29 @@
         <meta name="og:site_name" content="Gideon - gideonbot.com"/>
         <meta property="og:type" content="website" />
         <meta property="og:url" content="http:/gideonbot.com/" />
-        <meta property="og:image" content="https://github.com/gideonbot/web/raw/master/img/icons/gideon.webp" />
+        <meta property="og:image" content="https://gideonbot.com/img/logos/gideon.webp" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/webp" href="https://github.com/gideonbot/web/raw/master/img/icons/gideon.webp">
+        
+        <link rel="icon" type="image/png" href="img/icons/gideon-icon.png">
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/fontawesome.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800&display=swap">
+        
         <script src="js/index.js"></script>
+        <script src="js/menu.js"></script>
     </head>
     <body>
-        <div class="alert">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="alert hidden">
+            <span class="closebtn" onclick="RemoveAlert()">&times;</span>
             <strong>Attention!</strong> The website is still under construction. Please use <strong>!help</strong> to get a list of all commands!
         </div>
         <nav>
             <div class="left">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="features.html">FEATURES</a>
-                <a href="doc.html">DOCUMENTATION</a>
+                <a id="menu" class="hide"><i class="fas fa-bars"></i>  MENU</a>
+                <a href="index.html" class="show selected">HOME</a>
+                <a href="about.html" class="show">ABOUT</a>
+                <a href="features.html" class="show">FEATURES</a>
+                <a href="doc.html" class="show">DOCUMENTATION</a>
             </div>
 
             <div class="right">
@@ -35,29 +40,29 @@
         </nav>
         <main>
             <article class="images">
-                <img src="https://gideonbot.com/img/logos/lotsymbol.webp" class="outer">
-                <img src="https://gideonbot.com/img/logos/batwomansymbol.webp" class="outer">
-                <img src="https://gideonbot.com/img/logos/constantinesymbol.webp">
-                <img src="https://gideonbot.com/img/icons/gideon.webp" id="gideon">
-                <img src="https://gideonbot.com/img/logos/flashsymbol.webp">
-                <img src="https://gideonbot.com/img/logos/arrowsymbol.webp" class="outer">
-                <img src="https://gideonbot.com/img/logos/supergirlsymbol.webp" class="outer">
+                <img src="img/logos/lotsymbol.webp" class="outer">
+                <img src="img/logos/batwomansymbol.webp" class="outer">
+                <img src="img/logos/constantinesymbol.webp">
+                <img src="img/logos/gideon.webp" id="gideon">
+                <img src="img/logos/flashsymbol.webp">
+                <img src="img/logos/arrowsymbol.webp" class="outer">
+                <img src="img/logos/supergirlsymbol.webp" class="outer">
             </article>
 
             <article class="big">
                 <h1>Gideon is the only bot you need to DC-fy your server!</h1>
+                <h3 id="stats">Processed -- commands in -- guilds with over -- users</h3>
                 <p>Gideon is the one and only Arrowverse Discord Bot. It provides all features you need on your DC Discord server!<br>
                 Also provides voice commands, interactive games, show infos and much more!</p>
                 <div class="links">
-                    <a href="https://gideonbot.com/discord" id="join">JOIN TIME VAULT</a>
-                    <a href="https://gideonbot.com/invite" id="add">ADD TO SERVER</a>
-                    <a href="#" onclick="alert('COMING SOON BRO');" id="alexa">ALEXA SKILL</a>
+                    <a href="https://gideonbot.com/discord" class="lightbutton">JOIN TIME VAULT</a>
+                    <a href="https://gideonbot.com/invite" class="darkbutton">ADD TO SERVER</a>
+                    <a href="#" onclick="alert('COMING SOON BRO');" class="lightbutton">ALEXA SKILL</a>
                 </div>
             </article>
         </main>
         <footer>
             <i>All Content is © of gideonbot.com 2020. The Arrowverse franchise and all related characters and elements are © & ™ of DC Comics and Warner Bros. Entertainment Inc.</i>
         </footer>
-        <script src="https://zbt1drg946v5.statuspage.io/embed/script.js"></script>
     </body>
 </html>

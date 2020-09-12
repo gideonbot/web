@@ -1,0 +1,35 @@
+main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: #7289DA;
+    color: white;
+    text-shadow: 1px 1px black;
+    max-height: 250px;
+    max-width: 20%;
+    padding: 16px;
+}
+
+.card > * { margin: 0; }
+.card > h4 { margin-bottom: 10px; }
+
+main { align-content: space-evenly; }
+
+@media (max-width: 768px) {
+    .card > p { font-size: smaller; }
+
+    .card {
+        max-width: 60%;
+        margin-bottom: 10px;
+    }
+
+    main {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}
