@@ -13,6 +13,8 @@ main {
     max-height: 250px;
     max-width: 20%;
     padding: 16px;
+    box-sizing: initial;
+    margin: 1% 0;
 }
 
 .card > * { margin: 0; }
