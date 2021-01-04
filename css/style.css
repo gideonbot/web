@@ -1,13 +1,17 @@
-* { font-family: Poppins; }
+* { 
+    font-family: Poppins; 
+    box-sizing: border-box;
+}
 
 body {
-    margin: 0;
     display: flex;
     flex-direction: column;
     background-color: #23272a;
     justify-content: center;
     text-align: center;
     min-height: 100vh;
+    margin: 0;
+    padding: 0fr;
 }
 
 .right {
@@ -17,13 +21,15 @@ body {
 }
 
 .right > a {
-    padding: 4px 15px;
+    padding: 5px 15px;
+    margin-left: 1.25rem;
     border: 1px solid gray;
     border-radius: 25px;
     text-decoration: none;
     color: white;
     text-align: center;
     font-weight: bold;
+    font-size: 0.9rem;
     transition: background-color 0.2s;
 }
 
@@ -31,8 +37,19 @@ body {
     background-color: rgba(87, 87, 87, 0.699);
 }
 
+.center {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.center > p{
+    margin: 0;
+    font-weight: bold;
+}
+
 nav {
-    margin: 20px 10px 0 10px;
+    margin: 20px 30px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,8 +63,9 @@ nav {
 .images {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 2%;
 }
 
 .left {
@@ -58,9 +76,11 @@ nav {
 .left > a {
     color: white;
     transition: background-color 0.2s;
-    padding: 10px 5px;
+    padding: 10px 10px;
     border-radius: 3px;
     text-decoration: none;
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 .left > a:hover { background-color: gray; }
@@ -72,7 +92,7 @@ nav {
 }
 
 .big > h1 {
-    font-size: 36px;
+    font-size: 30px;
     margin: 0 0 10px 0;
 }
 
@@ -94,9 +114,10 @@ nav {
     transition: background-color 0.2s;
     font-size: 16px;
     font-weight: 600;
+    margin: 10px 5px 0;
 }
 
-.links { margin-top: 30px; }
+/* .links { margin-top: 30px; } */
 
 .lightbutton { background-color: #7289da; }
 .darkbutton { background-color: #2c2f33; }
@@ -106,7 +127,7 @@ nav {
 
 main {
     background-color: #23272A;
-    /*background-image: url(https://auxetite-cdn.sirv.com/wavy-blurple-by-nouridio.svg);*/
+    /* background-image: url(https://auxetite-cdn.sirv.com/wavy-blurple-by-nouridio.svg); */
     background-position: bottom;
     background-repeat: repeat-x;
     background-size: 200%;
@@ -114,6 +135,7 @@ main {
     flex-direction: column;
     justify-content: center;
     flex: 1;
+    margin: 2% 5% 5%;
 }
 
 main > h2 { color: white; }
@@ -122,6 +144,7 @@ footer {
     background-color: #353e4c;
     color: white;
     text-align: center;
+    padding: 2% 5%;
 }
 
 .alert {
@@ -153,7 +176,6 @@ a { color: red; }
 @media (max-width: 768px) {
     .hide {
         display: block;
-        width: 100%;
     }
 
     nav {
@@ -165,16 +187,36 @@ a { color: red; }
         flex-direction: column;
         align-items: center;
         width: 90%;
+        order: 1;
     }
+
+    .left > a {width: 100%;}
 
     .right {
         width: 90%;
-        flex-direction: column;
+        flex-direction: row;
+        order: 2;
     }
 
     .right > a {
-        margin-top: 5px;
-        padding: 3px 15px;
+        margin: 5px;
+        padding: 10px 15px;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        padding: 2% 5%;
+        font-size: 2.5rem;
+    }
+
+    .center > a {
+        display: block;
+        color: white;
     }
 
     .show { display: none; }
