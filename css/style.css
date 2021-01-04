@@ -1,7 +1,8 @@
-* { font-family: Poppins; }
+* { font-family: Poppins; 
+    box-sizing: border-box;}
 
 body {
-    margin: 0;
+    margin: 0 5%;
     display: flex;
     flex-direction: column;
     background-color: #23272a;
@@ -17,18 +18,33 @@ body {
 }
 
 .right > a {
-    padding: 4px 15px;
+    padding: 5px 15px;
+    margin-right: 20px;
     border: 1px solid gray;
     border-radius: 25px;
     text-decoration: none;
     color: white;
     text-align: center;
     font-weight: bold;
+    font-size: 0.9rem;
     transition: background-color 0.2s;
 }
 
 .right > a:hover {
     background-color: rgba(87, 87, 87, 0.699);
+}
+
+/* Center class by AnshumanMahato */
+
+.center {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.center > p {
+    margin: 0;
+    font-weight: bold;
 }
 
 nav {
@@ -46,7 +62,7 @@ nav {
 .images {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -58,9 +74,11 @@ nav {
 .left > a {
     color: white;
     transition: background-color 0.2s;
-    padding: 10px 5px;
+    padding: 10px 10px;
     border-radius: 3px;
     text-decoration: none;
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 .left > a:hover { background-color: gray; }
@@ -114,6 +132,7 @@ main {
     flex-direction: column;
     justify-content: center;
     flex: 1;
+    margin: 2% 0;
 }
 
 main > h2 { color: white; }
