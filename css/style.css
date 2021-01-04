@@ -1,5 +1,7 @@
-* { font-family: Poppins; 
-    box-sizing: border-box;}
+* { 
+    font-family: Poppins; 
+    box-sizing: border-box;
+}
 
 body {
     display: flex;
@@ -20,7 +22,7 @@ body {
 
 .right > a {
     padding: 5px 15px;
-    margin-left: 20px;
+    margin-left: 1.25rem;
     border: 1px solid gray;
     border-radius: 25px;
     text-decoration: none;
@@ -34,8 +36,6 @@ body {
 .right > a:hover {
     background-color: rgba(87, 87, 87, 0.699);
 }
-
-/* Center class by AnshumanMahato */
 
 .center {
     color: white;
@@ -127,7 +127,7 @@ nav {
 
 main {
     background-color: #23272A;
-    /*background-image: url(https://auxetite-cdn.sirv.com/wavy-blurple-by-nouridio.svg);*/
+    /* background-image: url(https://auxetite-cdn.sirv.com/wavy-blurple-by-nouridio.svg); */
     background-position: bottom;
     background-repeat: repeat-x;
     background-size: 200%;
